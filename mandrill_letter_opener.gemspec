@@ -22,4 +22,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "bundler", "~> 1.10"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec"
+
+  spec.add_dependency "mandrill_mailer", "~> 1.1.0"
+  spec.add_dependency "letter_opener", "~> 1.4.1"
 end
