@@ -15,6 +15,8 @@ module MandrillLetterOpener
             }
             ActionMailer::Base.mail(opts).deliver
           end
+          alias_method :deliver_now, :deliver
+          alias_method :deliver_later, :deliver
         end
       end
     end
